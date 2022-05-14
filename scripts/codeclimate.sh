@@ -27,4 +27,4 @@ done
 result=$codeclimate_dir/codeclimate.total.json
 # shellcheck disable=SC2046
 cc-test-reporter sum-coverage $(find "$codeclimate_dir" -name coverage.json) -o "$result"
-# cc-test-reporter upload-coverage -i "$result"
+cc-test-reporter upload-coverage -i "$result"
